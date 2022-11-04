@@ -48,3 +48,5 @@ First we will be taking a look at the HTML part of our program
   </body>
 </html> 
 ```
+
+In the HTML file, the script.js and the style.css files are linked. After which we have added the main components of our code. We have a `textarea` which has a placeholder "Enter something to save". There is a dummy default text "Hello Programmmerzzzzz". 
