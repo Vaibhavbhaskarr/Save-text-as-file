@@ -183,3 +183,15 @@ textarea:valid ~ .save-btn{
 }
 ```
 In the last part of our CSS, we style the `.file-options`, `options` and the `save buttons` for our program. We style the different elements, based on our preferences. If the **textarea** has text added to it, then our `save-btn` has `Opacity: 1`, but if it is blank then our save-btn has a `Opacity: 0.6`. When the save button is hovered, then the background color changes. We use the `@media screen` to ensure that the user's screen matches the width of `475px` or not.
+
+**Now we have our HTML components done, and we have styled them as per our liking in CSS. So we move on to add the functionalities using Javascript.**
+
+##Javascript 
+
+```Javascript
+const textarea = document.querySelector("textarea"),
+fileNameInput = document.querySelector(".file-name input"),
+selectMenu = document.querySelector(".save-as select"),
+saveBtn = document.querySelector(".save-btn");
+
+```
