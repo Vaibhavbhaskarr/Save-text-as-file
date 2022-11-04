@@ -186,7 +186,7 @@ In the last part of our CSS, we style the `.file-options`, `options` and the `sa
 
 **Now we have our HTML components done, and we have styled them as per our liking in CSS. So we move on to add the functionalities using Javascript.**
 
-##Javascript 
+## Javascript 
 
 ```Javascript
 const textarea = document.querySelector("textarea"),
@@ -195,3 +195,27 @@ selectMenu = document.querySelector(".save-as select"),
 saveBtn = document.querySelector(".save-btn");
 
 ```
+To start off our Javascript, we declare const type variables. Each of our variable, uses `document.querySelector` to select the specific components from our HTML file. 
+
+Next, 
+```Javascript
+selectMenu.addEventListener("change", () => {
+    const selectedFormat = selectMenu.options[selectMenu.selectedIndex].text;
+    saveBtn.innerText = `Save As ${selectedFormat.split(" ")[0]} File`;
+});
+```
+In this part, we use addEvenListener inside selectMenu to perform the function we code after it. We then create a variable `selectedFormat` which selects an option from our list of options that we included in our HTML along with the `[selectedIndex]` of that particular option selected. In the last line of this part, we want to change the `innerText` of our save-btn, based on the format that is selected by the user in `save-as`.
+
+
+In the next part, 
+```Javascript
+saveBtn.addEventListener("click", () => {
+    const blob = new Blob([textarea.value], {type: selectMenu.value});
+    const fileUrl = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.download = fileNameInput.value;
+    link.href = fileUrl;
+    link.click();
+});
+```
+
