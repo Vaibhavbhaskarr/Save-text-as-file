@@ -123,3 +123,4 @@ Then for the `body`, we align the items in the `center` and justify the content 
 }
 
 ```
+In this part of our CSS, we style the `.wrapper` class, adding some padding, box-shadow, width for our box, and also border-radius to add a nice rounding effect to it. Then in `.wrapper :where(textarea, input, select, button){` we make changes to the elemnts inside our `.wrapper` class, but these changes would be made **only** to `textarea,input,select,button` elements. A border-radius is added for the rounding effect on the edges. Outline and border are set to 0, and the font-size is set to 17px. Similarly we make further changes to different elements  inside our `.wrapper` class based on our preference. The `.wrapper textarea` is set to `height: 270px`, this determines the height of our textarea.
