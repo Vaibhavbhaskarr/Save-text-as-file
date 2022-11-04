@@ -124,7 +124,62 @@ Then for the `body`, we align the items in the `center` and justify the content 
 
 ```
 In this part of our CSS, we style the `.wrapper` class, adding some padding, box-shadow, width for our box, and also border-radius to add a nice rounding effect to it. In 
-```CSS 
-.wrapper :where(textarea, input, select, button){ 
-``` 
+`.wrapper :where(textarea, input, select, button){ `
 We make changes to the elemnts inside our `.wrapper` class, but these changes would be made **only** to `textarea,input,select,button` elements. A border-radius is added for the rounding effect on the edges. Outline and border are set to 0, and the font-size is set to 17px. Similarly we make further changes to different elements  inside our `.wrapper` class based on our preference. The `.wrapper textarea` is set to `height: 270px`, this determines the height of our textarea.
+
+
+```CSS
+.file-options .option{
+  width: calc(100% / 2 - 8px);
+}
+.option label{
+  font-size: 17px;
+}
+.option :where(input, .select-menu){
+  height: 50px;
+  padding: 0 13px;
+  margin-top: 6px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+.option .select-menu select{
+  height: 50px;
+  background: none;
+}
+.wrapper .save-btn{
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 16px 0;
+  margin-top: 20px;
+  pointer-events: none;
+  background: #17A2B8;
+}
+.save-btn:hover{
+  background: #148c9f;
+}
+textarea:valid ~ .save-btn{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 475px) {
+  .wrapper{
+    padding: 25px 18px 30px;
+  }
+  .wrapper :where(textarea, input, select, button, label){
+    font-size: 16px!important;
+  }
+  .file-options .option{
+    width: calc(100% / 2 - 5px);
+  }
+  .option :where(input, .select-menu){
+    padding: 0 10px;
+  }
+  .wrapper .save-btn{
+    padding: 15px 0;
+  }
+}
+```
+In the last part of our CSS, we style the `.file-options`, `options` and the `save buttons` for our program. We style the different elements, based on our preferences. If the **textarea** has text added to it, then our `save-btn` has `Opacity: 1`, but if it is blank then our save-btn has a `Opacity: 0.6`. When the save button is hovered, then the background color changes.
