@@ -49,4 +49,4 @@ First we will be taking a look at the HTML part of our program
 </html> 
 ```
 
-In the HTML file, the script.js and the style.css files are linked. After which we have added the main components of our code. We have a `textarea` which has a placeholder "Enter something to save". There is a dummy default text "Hello Programmmerzzzzz". 
+In the HTML file, the script.js and the style.css files are linked. After which we have added the main components of our code. We have a `textarea` which has a `placeholder` "Enter something to save". There is a dummy default text "Hello Programmmerzzzzz". Then there is another textfield which is for the "Enter file name".  Then comes the `Save as` option, where we use `Select`
