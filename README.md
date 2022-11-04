@@ -83,3 +83,43 @@ body{
   background: #17A2B8;
 }
 ```
+In the first part of our CSS code, we import the font that we would like to use, then we use `*` to assign the following styles to all the elements, the font, margin, padding and box-sizing. 
+
+Then for the `body`, we align the items in the `center` and justify the content to `center`. The padding and background color are set. For display we use `flex` so that the child elements can be auto assigned aligned flexibly. 
+
+```CSS
+.wrapper{
+  width: 443px;
+  border-radius: 7px;
+  background: #fff;
+  padding: 30px 25px 40px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+}
+.wrapper :where(textarea, input, select, button){
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.wrapper :where(textarea, input)::placeholder{
+  color: #aaa;
+}
+.wrapper :where(textarea, input):focus{
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.08);
+}
+.wrapper textarea{
+  height: 270px;
+  resize: none;
+  padding: 8px 13px;
+  font-size: 17.6px;
+  border: 1px solid #ccc;
+}
+.wrapper .file-options{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+```
