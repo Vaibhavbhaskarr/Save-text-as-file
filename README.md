@@ -61,3 +61,25 @@ For the `option` we select the **MIME value** which is the identifier which indi
 - The MIME value for a PPT file (.ppt) is *application/vnd.ms-powerpoint*.
 
 Lastly a button is added, which will be used as the `Save as text file` button.
+
+
+
+#### Next we move on to the CSS part of our program, in which we will be styling our HTML components.
+
+```CSS
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  background: #17A2B8;
+}
+```
