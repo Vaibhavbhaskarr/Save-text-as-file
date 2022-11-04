@@ -219,6 +219,6 @@ saveBtn.addEventListener("click", () => {
 ```
 Now we use `blob()`, The Blob object represents a blob, which is a file-like object of immutable, raw data; they can be read as text or binary data, or converted into a ReadableStream so its methods can be used for processing the data. Blobs can represent data that isn't necessarily in a JavaScript-native format. The File interface is based on Blob, inheriting blob functionality and expanding it to support files on the user's system.
 
-Using `blob`, we select the `textarea.value` which is the MIME value we had added in HTML. The `URL.creatorObjectURL` will create an URL that represents the passed object. Then in `const link = document.createElement("a");` we create the a tag. After which, we set the `link.download` to use the text that we added as the download name of the link. Then we pass `fileUrl` as the href value of link. Finally, we use `link.click();` so that the file can be downloaded when clicked.
+Using `blob`, we select the `textarea.value` which is the MIME value we had added in HTML. The `URL.creatorObjectURL` will create an URL that represents the passed object. Then in `const link = document.createElement("a");` we create the 'a tag'. After which, we set the `link.download` to use the text that we added as the download name of the link. Then we pass `fileUrl` as the href value of link. Finally, we use `link.click();` so that the file can be downloaded when clicked.
 
 ## The end
