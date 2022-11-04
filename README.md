@@ -7,7 +7,6 @@ In this Git Repository you will find 3 files:
     2. style.css: -Includes the formating or styling for our program.
     4. script.js: -Includes the functionality of the program.
 
-Further Comments are put inside the code to explain what each part does.
 
 #### HTML - First we will be taking a look at the HTML part of our program
 ```HTML
