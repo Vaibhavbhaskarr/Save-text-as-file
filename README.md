@@ -11,7 +11,8 @@ Further Comments are put inside the code to explain what each part does.
 
 #### HTML 
 First we will be taking a look at the HTML part of our program
-``` <!DOCTYPE html>
+```HTML
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
