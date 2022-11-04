@@ -9,8 +9,7 @@ In this Git Repository you will find 3 files:
 
 Further Comments are put inside the code to explain what each part does.
 
-#### HTML 
-First we will be taking a look at the HTML part of our program
+#### HTML - First we will be taking a look at the HTML part of our program
 ```HTML
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -50,4 +49,15 @@ First we will be taking a look at the HTML part of our program
 </html> 
 ```
 
-In the HTML file, the script.js and the style.css files are linked. After which we have added the main components of our code. We have a `textarea` which has a `placeholder` "Enter something to save". There is a dummy default text "Hello Programmmerzzzzz". Then there is another textfield which is for the "Enter file name".  Then comes the `Save as` option, where we use `Select`
+In the HTML file, the script.js and the style.css files are linked. After which we have added the main components of our code. We have a `textarea` which has a `placeholder` "Enter something to save". There is a dummy default text "Hello Programmmerzzzzz". Then there is another textfield which is for the "Enter file name".  Then comes the `Save as` option, where we use `Select` tag for our drop down menu. 
+
+For the `option` we select the **MIME value** which is the identifier which indicates the nature and format of the document. 
+
+- The MIME value for a text file (txt) is *text/plain*. 
+- The MIME value for a javascript file (.js) is *text/javascript*.
+- The MIME value for a html file (.html) is *text/html*.
+- The MIME value for SVF file (.svg) is *image/svg+xml*.
+- The MIME value for a Doc file (.doc) is *application/msword*.
+- The MIME value for a PPT file (.ppt) is *application/vnd.ms-powerpoint*.
+
+Lastly a button is added, which will be used as the `Save as text file` button.
